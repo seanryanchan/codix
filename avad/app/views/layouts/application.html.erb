@@ -8,21 +8,19 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-	  <!-- Navbar  
-	  	 Author: Gab -->
-	<nav class = "navbar default-navbar navbar-fixed-top">
-		<%= link_to "Avad", splash_path, {:class =>"navbar navbar-brand"} %>
-		<ul class="navbar navbar-nav">
-			<li> <%= link_to "Events", events_path %> </li>
-		</ul>
-		<ul class = "navbar navbar-nav navbar-right">
-			<li> <%= link_to "Login", login_path %> </li>
-			<li> <%= link_to "Sign Up", register_path %> </li>
-		</ul>	
-	</nav>	
-	<!-- End of navbar -->
-    <%= yield %>
-    	<!-- Do we need a footer? -->
-	<!-- Eh i'll do it later -Gab -->
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Avad", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Help",   '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
