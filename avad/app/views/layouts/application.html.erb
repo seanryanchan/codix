@@ -15,17 +15,17 @@
 			  <li><%= link_to "Home",   events_path%></li>
 		  </ul>
 		  <ul class = "nav navbar-nav navbar-right" >
-			  <li><%= link_to "Log in", login_path %></li>
+			  <li><%= link_to "Log in", '#'%></li>
 			  <li><%= link_to "Sign Up", signup_path %></li>
 		  </ul>
 	    </div>
     </nav>
-    <div class="container">
+    <div class="container" style ="padding-top:70px;">
       <%= yield %>
     </div>
     <div class = "container" >
 	    <div class = "text-center">
-		    <%= link_to "About Us", about_path %> 
+		    <%= link_to "About Us", "#"%> 
 	    </div>	    
     </div>
 
