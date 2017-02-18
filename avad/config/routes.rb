@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   # Landing Page
   root 'splash#index'
 
+  get 'signup', to:"users#new", as: "signup"
+
+
 
 end
