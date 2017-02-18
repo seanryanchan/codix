@@ -11,7 +11,10 @@ class EventsController < ApplicationController
   # GET /events/1.json
   def show
   end
-
+  def show_all
+    @events = Event.where(instructor_ID: params[:id])
+    render 'events/show_all'
+  end
   # GET /events/new
   def new
     @event = Event.new
